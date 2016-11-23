@@ -1,3 +1,4 @@
 node_modules
 *.zip
-prod/assets/css
+prod/assets/css/*.css
+prod/assets/css/*.map
