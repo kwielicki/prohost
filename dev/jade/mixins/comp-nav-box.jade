@@ -1,0 +1,8 @@
+//- Komponent generujący listę nawigacyjną z nagłowkiem
+mixin comp-nav-box(title)
+	nav.component.nav-box
+		h4.nav-box__title=title
+		ul.nav-box__list
+			-each link in records
+				li.nav-box__element
+					a.nav-box__link(href=link.href, title=link.title)=link.text
