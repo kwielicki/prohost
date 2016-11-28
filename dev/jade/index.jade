@@ -1,5 +1,11 @@
 //- Document Head
 extends config/base
 block page_content
-    h1 Hello. It's working.
-    p Wiadomość testowa
+	section.layout-section
+		.container
+			.row
+				.col-xs-12.col-md-8.offset-md-2
+					+comp-section-header(
+						'Our services',
+						'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore'
+					)
