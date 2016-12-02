@@ -1,0 +1,66 @@
+.logo-box {
+    text-align: center;
+    h5 {
+        font-size: $font-size-lg;
+        margin-top: $spacer-xs;
+    }
+    p {
+        font-size: $font-size-h6;
+        font-weight: 600;
+        margin-top: $spacer-xs;
+     }
+    span{
+        color: $light;
+    }
+
+}
+.white{
+    color: $light;
+    font-weight: 600;
+}
+
+.social-btn {
+    padding-left: 0;
+    margin-top: 3rem;
+    &__list {
+        font-size: $font-size-h6;
+        font-weight: 800;
+        list-style-type: none;
+        display: inline-block;
+        text-align: center;
+        padding: 10px 10px 10px 10px;
+
+    }
+    &__anchor {
+        font-size: $font-size-vsm;
+        text-align: center;
+        border-style: solid;
+        border-width: 0.15rem;
+        padding: 10px 10px 10px 10px;
+        display: block;
+        transition: background-color 1s;
+        &:hover {
+            background-color: $twhite;
+            text-decoration: none;
+
+        }
+        &--facebook {
+            color: $dark-blue;
+            &:hover{
+                color: $dark-blue;
+            }
+        }
+        &--twitter{
+            color: $ex-light;
+            &:hover{
+                color: $ex-light;
+            }
+        }
+        &--google{
+            color: $hotpink;
+            &:hover{
+                color: $hotpink;
+            }
+        }
+    }
+}

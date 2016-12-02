@@ -1,7 +1,24 @@
 footer.component.footer
 	.container
 		.row
-			.col-md-3
-				//- Zamieszczam Ci przykładowe zastosowanie
-				- var records = [{href: '#', title: 'Title', text: 'demo Text'}]
-				+comp-nav-box('Tytuł dla listy')
+			.col-md-3.col-sm-6.col-xs-8.offset-xs-2.offset-sm-0
+				- var records = [{href: '#', title: 'Web Hosting', text: 'Web Hosting'}, {href: '#', title: 'Reseller Hosting', text: 'Reseller Hosting'},{href: '#', title: 'VPS Hosting', text: 'VPS Hosting'}, {href: '#', title: 'Dedicated Hosting', text: 'dedicated Hosting'}, {href: '#', title: 'Application Hosting', text: 'Application Hosting'}]
+				+comp-nav-box('LoremIpsum')
+			.col-md-3.col-sm-6.col-xs-8.offset-xs-2.offset-sm-0
+				- var records = [{href: '#', title: 'About LoremIpsum', text: 'About LoremIpsum'}, {href: '#', title: 'Awards & Reviews', text: 'Awards & Reviews'}, {href: '#', title: 'Press & Media', text: 'Press & Media'}, {href: '#', title: 'Company Blog', text: 'Company Blog'}, {href: '#', title: 'Contac Us', text: 'Contact Us'}, {href: '#', title: 'Contac Us', text: 'Contact Us 2'}]
+				+comp-nav-box('Company')
+			.col-md-2.col-sm-6.col-xs-8.offset-xs-2.offset-sm-0
+				- var records = [{href: '#', title: 'About LoremIpsum', text: 'About LoremIpsum'}, {href: '#', title: 'Hosting', text: 'Hosting'}, {href: '#', title: 'Domains', text: 'Domains'}, {href: '#', title: 'Pages', text: 'Pages'}, {href: '#', title: 'Category', text: 'Category'},{href: '#', title: 'Contac Us', text: 'Contact Us'}]
+				+comp-nav-box('Menu')
+			.col-md-4.col-sm-6.col-xs-8.offset-xs-2.offset-sm-0
+				.logo-box
+					h5 lorem#[span Ipsum]
+					p.white © 2016 All rights reserved. LoremIpsum
+					p.orange Stay connected
+					ul.component.social-btn
+						li.social-btn__list
+							a(href="#", title="Facebook" class="social-btn__anchor social-btn__anchor--facebook") FACEBOOK
+						li.social-btn__list
+							a(href="#", title="Twitter" class="social-btn__anchor social-btn__anchor--twitter") TWITTER
+						li.social-btn__list
+							a(href="#", tittle="Google" class="social-btn__anchor social-btn__anchor--google") GOOGLE G

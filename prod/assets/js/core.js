@@ -193,6 +193,29 @@
                         $this.css('color', $color);
                     });
                 }
+
+            // EqualWidth
+            $.fn.equalWidth = function(){
+            var $this = $(this),
+                $array = [],
+                options = {
+                  width: false,
+                  minWidth: true
+                };
+            $this.each(function(){
+                var $outerHeight = $(this).outerWidth();
+                $array.push($outerHeight);
+            });
+            var maxValue = Math.max.apply(Math,$array);
+
+            if (options['width'] === true){
+                $this.css('width', maxValue + "px");
+            }
+            if (options['minWidth'] === true){
+                $this.css('min-width', maxValue + "px");
+            }
+        };
+        $('.social-btn').find('.social-btn__list').equalWidth();
 	}); //- Document on ready [end]
 
 	$(window).on('load', function() {
@@ -220,7 +243,7 @@
     }); //- Window on scroll [end]
 
     $(window).on('resizeend', function() {
-        
+
     }); //- window on resize [end]
 
 }(jQuery))

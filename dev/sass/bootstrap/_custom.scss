@@ -1,4 +1,4 @@
-// Bootstrap overrides
+// Bootstrap overridesS
 //
 // Copy variables from `_variables.scss` to this file to override default values
 // without modifying source files.
@@ -10,20 +10,31 @@ $font-size-base: 1.6rem;
 $font-family-sans-serif	: 'Lato', sans-serif;
 $headings-font-family	: 'Oswald', sans-serif;
 
-$font-size-h1: 5.5rem;
-$font-size-h2: 5.0rem;
-$font-size-h3: 4.0rem;
-$font-size-h4: 2.4rem;
-$font-size-h5: 1.8rem;
-$font-size-h6: 1.6rem;
+$font-size-h1  :5.5rem;
+$font-size-h2  :5.0rem;
+$font-size-h3  :4.0rem;
+$font-size-lg  :3.6rem;
+$font-size-h4  :2.4rem;
+$font-size-sm  :2rem;
+$font-size-h5  :1.8rem;
+$font-size-h6  :1.6rem;
+$font-size-vsm :1.2rem;
 
 $brand-primary  : #4f4872;
 $brand-secondary: #fdb834;
 $gray           : #898989;
 $dark-gray      : #333;
-$light-gray     : #f3f3f3;
+$light-gray     : rgba(255,255,255,0.5);
 $dark-blue      : #337ab7;
 $light-blue     : #337ab7;
 
 // Spacers
 $spacer: 30px;
+
+$light          : #fff;
+$ex-light       : rgb(65,171,225);
+$hotpink        : rgb(255,105,180);
+$twhite         : rgba(255,255,255,0.9);
+
+$spacer-xs      : 14px;
+$spacer-small   : 20px;

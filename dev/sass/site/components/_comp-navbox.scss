@@ -1,0 +1,28 @@
+.nav-box{
+    &__list {
+        font-size: $font-size-h6;
+        color: $dark-gray;
+        list-style-type: none;
+        padding-left: 0;
+        padding-bottom: $spacer-small;
+    }
+
+    &__title {
+        font-size: $font-size-sm;
+        font-weight: 900;
+        color: $light;
+        margin-top: $spacer-xs;
+        margin-bottom: $spacer-xs;
+    }
+    &__element {
+        margin-bottom: 8px;
+    }
+    &__link {
+        color: $light-gray;
+        transition: color 0.4s;
+    }
+    &__link:hover{
+        text-decoration: none;
+        color:$dark-blue;
+    }
+}
