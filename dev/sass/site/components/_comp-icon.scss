@@ -1,0 +1,18 @@
+.icon-box{
+    &__logo{
+        font-size: $font-size-h3;
+        color:$brand-primary;
+        line-height: 1;
+    }
+    &__text{
+        font-size:$font-size-h6;
+        color: $brand-primary;
+        font-weight: 900;
+    }
+    .media-left {
+        vertical-align: top;
+        @include media-breakpoint-between(sm, md) {
+            vertical-align: middle;
+        }
+    }
+}

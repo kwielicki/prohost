@@ -1,0 +1,10 @@
+//-Komponent generujący kontakty
+mixin comp-icon(logo,text1,text2)
+    .component.icon-box.media
+        .icon-box__logo.media-left
+            i(class="fa fa-" + logo)
+        .icon-box__text.media-body
+            p=text1
+            p.orange=text2
+            
+    
