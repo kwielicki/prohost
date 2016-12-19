@@ -1,0 +1,26 @@
+
+.subscribe{
+    background-color: $brand-primary;
+    h2{
+    color:$brand-secondary;
+    padding-top: $spacer-medium;
+    padding-bottom: $spacer-medium;
+    }
+    #input-email{
+        width:900rem;
+    }
+    .form-subscribe{
+        padding-bottom: $spacer-medium;
+    }
+    .sb-btn{
+        text-align: center;
+        color: $brand-primary;
+        background-color: $brand-secondary;
+        padding: 5px 10px 5px 10px;
+        transition: background-color 1s, color 1s;
+            &:hover{
+                background-color:$twhite;
+                color: $hotpink;
+            }
+    }
+}

@@ -2,19 +2,28 @@
 extends config/base
 block page_content
 	section.layout-section
-		.container
+		.container-fluid.subscribe
 			.row
-				.col-xs-12.col-md-8.offset-md-2
-					+comp-section-header(
-						'Our services',
-						'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore'
-					)
+				.col-xs-12
+					h2.offset-md-2 Videlicet excogitabit aliquid atque adferet
+			.row
+				form.form-horizontal
+					.form-group.form-subscribe
+						.col-sm-6.offset-md-3
+							input#email.form-control(type='email', placeholder='Enter email')
+						label.control-label(for='email').btn.sb-btn lorem
+
+		.container
+			+comp-section-header(
+				'Our services',
+				'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore'
+			)
 			.row		
 				.col-xs-6.col-md-3
 					+comp-icon(
 						"gift",
 						"hakuna MATATA",
-						"KOMAR ZJADŁ SŁONIA"
+						"To nie jest zabawne"
 						)
 				.col-xs-6.col-md-3
 					+comp-icon(
@@ -33,4 +42,4 @@ block page_content
 						"paw",
 						"hakuna MATATA",
 						"THREAT OF JS"
-						)							
+						)

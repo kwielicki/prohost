@@ -12,7 +12,11 @@
     .media-left {
         vertical-align: top;
         @include media-breakpoint-between(sm, md) {
-            vertical-align: middle;
+            padding-top: 3rem;
+            padding-right: 2rem;
         }
     }
+}
+.orange{
+    color:$brand-secondary;
 }
